@@ -1,10 +1,96 @@
+/* Dark Mode */
+.dark {
+    background-color:#243447;
+    height: 100vh;
+    color: #bebebe
+   
+  }
+
+.light {
+    background-color: #f0ead6;
+    color: black;
+    height: 100vh;
+  }
+  
 header{
     display: flex;
     border-bottom: black solid 3px;
     padding: 3px;
-    justify-content: space-between;
+    justify-content:space-between;
+    align-items: center;
 }
 
 header button{
-    
+    padding: 10px 30px; 
+    font-size: 20px; 
+    border: solid black 3px; 
+    border-radius: 10px; 
+    cursor: pointer;
+    margin-bottom: 2px;
+    color: black;
+    background-color: white;
 }
+
+header button:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Styles for mode labels and toggle switch */
+.mode-label-left {
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+  }
+  
+  .mode-label-right {
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
