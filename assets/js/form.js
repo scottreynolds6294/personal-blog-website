@@ -15,13 +15,16 @@ document.getElementById('blog-post').addEventListener("submit", function(event) 
         content: content
     };
 
-localStorage.setItem("blogInfo", JSON.stringify(blogInfo));
-window.location.href = "blog.html"
-
-document.getElementById('blog-post').reset();
+    saveBlogPost(blogInfo);
+    document.getElementById('blog-post').reset();
+    window.location.href = 'blog.html';
 });
 
-
+function saveBlogPost(blogInfo) {
+    let posts = JSON.parse(localStorage.getItem("blogPosts")) || [];
+    posts.push(blogInfo);
+    localStorage.setItem('blogPosts', JSON.stringify(posts));
+}
 
 
 
