@@ -19,18 +19,18 @@ function renderBlogPosts() {
         const postElement = document.createElement('div');
         postElement.classList.add('blog-post');
 
-        const usernameElement = document.createElement('h3');
-        usernameElement.textContent = `Username: ${post.username}`;
-
-        const titleElement = document.createElement('h2');
+        const titleElement = document.createElement('h5');
         titleElement.textContent = post.title;
 
         const contentElement = document.createElement('p');
         contentElement.textContent = post.content;
 
-        postElement.appendChild(usernameElement);
+        const usernameElement = document.createElement('h4');
+        usernameElement.textContent = `Posted by: ${post.username}`;
+
         postElement.appendChild(titleElement);
         postElement.appendChild(contentElement);
+        postElement.appendChild(usernameElement);
 
         blogPostsList.appendChild(postElement);
     });

@@ -9,10 +9,18 @@
   </head>
 
 
-  <body>
+  <body class="light">
     <header> 
       <h3>My Blog Board</h3>
         <button id="back-button"> ⬅ Back </button>
+        <div class="mode">
+          <label for="toggle-left" class="switch-label"> light </label>
+          <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider round"></span>
+          </label>
+          <label for="toggle-right" class="switch-label"> dark</label>
+        </div>
     </header>
     <main>
       <div class="container"></div>
@@ -21,6 +29,10 @@
 
         </div>
     </main>
-    <script src="assets/js/blog.js"></script> </script>
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/logic.js"></script>
+      <footer>
+        <a href="https://scottreynolds6294.github.io/My-Portfolio/">View My Portfolio</a>
+      </footer>
   </body>
   </html>

@@ -1,3 +1,17 @@
+header {
+  display: flex;
+  justify-content: end;
+}
+.mode {
+  display: inline;
+  text-align: right;
+}
+
+.switch-label {
+  position: relative;
+  display: inline-block;
+  font-size: small;
+}
 .container {
     display: flex;
     align-items: top; 
@@ -50,6 +64,7 @@ h1{
     height: 200px;
     width: 100%;
     padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif
   }
 
   .submit-button button {

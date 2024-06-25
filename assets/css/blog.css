@@ -22,3 +22,57 @@ header button:hover {
     background-color: red;
     color: white;
 }
+
+.mode {
+    display: inline;
+    padding: 20px;
+  }
+  
+.switch-label {
+    position: relative;
+    display: inline-block;
+    font-size: small;
+  }
+.title {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.blog-post {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.blog-post h5 {
+    border-bottom: solid black 1px;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+.blog-post p{
+    font-size: medium;
+}
+
+.blog-post h4 {
+    font-size: small;
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+}
+footer a {
+    font-size: small;
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: blue;
+    text-decoration: underline;
+}
