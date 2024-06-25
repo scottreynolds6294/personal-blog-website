@@ -13,5 +13,5 @@ All code was completed by Scott Reynolds.
 link to deployed application: https://scottreynolds6294.github.io/personal-blog-website/
 
 
-![alt text](<assets/images/Screenshot 2024-06-24 at 1. 0.21.57 PM.png>)
+![alt text](<assets/images/Screenshot 2024-06-24 at 10.21.57 PM.png>)
 ![alt text](<assets/images/Screenshot 2024-06-24 at 10.23.11 PM.png>)
